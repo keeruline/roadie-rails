@@ -185,7 +185,7 @@ class MyOtherMailer
   include Roadie::Rails::Mailer
 
   def some_mail(user)
-    roadie_email {to: "foo@example.com"}, roadie_options_for(user)
+    roadie_mail {to: "foo@example.com"}, roadie_options_for(user)
   end
 
   private
